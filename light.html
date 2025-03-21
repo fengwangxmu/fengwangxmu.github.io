@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No One</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        display: flex;
+      }
+      .sidebar {
+        width: 200px;
+        padding: 20px;
+        order: 2;  /* 将边栏放到右边 */
+      }
+      .sidebar a {
+        display: block;
+        padding: 10px 0;
+        color: #333;
+        text-decoration: none;
+      }
+      .sidebar a:hover {
+        color: #007bff;
+      }
+      /* 主要内容区域 */
+      .content {
+        flex: 1;
+        padding: 20px;
+        order: 1;  /* 保持主要内容在左边 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 主要内容 -->
+    <div class="content">
+      <h1 style="text-align: center;">Spotless Mind</h1>
+    </div>
+    <!-- 侧边栏 -->
+    <div class="sidebar">
+      <a href="/">HomePage</a>
+      <a href="/light.html">Light</a>
+      <a href="/water.html">Water</a>
+      <a href="/memory.html">Memory</a>
+    </div>
+  </body>
+</html>
