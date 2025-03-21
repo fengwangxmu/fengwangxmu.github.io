@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No One</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        display: flex;
+      }
+      /* 侧边栏样式：移除背景，并设置显示在右侧 */
+      .sidebar {
+        width: 200px;
+        padding: 20px;
+        order: 2;  /* 将边栏放到右边 */
+      }
+      .sidebar a {
+        display: block;
+        padding: 10px 0;
+        color: #333;
+        text-decoration: none;
+      }
+      .sidebar a:hover {
+        color: #007bff;
+      }
+      /* 主要内容区域 */
+      .content {
+        flex: 1;
+        padding: 20px;
+        order: 1;  /* 保持主要内容在左边 */
+      }
+      /* 图片区域样式 */
+      .image-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* 图片之间的间距 */
+        margin-top: 20px;
+      }
+      .image-box {
+        width: 150px; /* 固定宽度 */
+        text-align: center;
+      }
+      .image-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; /* 圆角，可选 */
+      }
+      .caption {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 主要内容 -->
+    <div class="content">
+      <h1 style="text-align: center;">Felix Wang</h1>
+      <p style="text-align: center;">I am No One and it DOESN'T matter.</p>
+      <!-- 图片区域：直接位于主要内容下方 -->
+      </div>
+    </div>
+    <!-- 侧边栏 -->
+    <div class="sidebar">
+      <a href="/">HomePage</a>
+      <a href="/light.html">Light</a>
+      <a href="/water.html">Water</a>
+      <a href="/memory.html">Memory</a>
+    </div>
+  </body>
+</html>
