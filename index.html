@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>No One</title>
+    <title>NoBody</title>
     <style>
       body {
         margin: 0;
@@ -52,14 +52,31 @@
         font-size: 14px;
         color: #333;
       }
+      .fixed-size {
+        width: 400px;
+        height: 400px;
+        /* 可选：保持图片比例 */
+        object-fit: cover;
+      }
+      .image-group img {
+        /* 设置右侧和底部的外边距 */
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
     </style>
   </head>
   <body>
     <!-- 主要内容 -->
     <div class="content">
       <h1 style="text-align: center;">Felix Wang</h1>
-      <p style="text-align: center;">I am No One and it DOESN'T matter.</p>
+      <p style="text-align: center;">I am NoBody and it DOESN'T matter.</p>
       <!-- 图片区域：直接位于主要内容下方 -->
+        <div style="text-align: center;" class="image-group">
+          <img src="image_index/index_0.png" alt="1", class="fixed-size">
+          <figcaption>Winter in Spring</figcaption>
+          <img src="image_index/index_1.png" alt="1", class="fixed-size">
+          <figcaption>Cloud</figcaption>
+        </div>
       </div>
     </div>
     <!-- 侧边栏 -->
